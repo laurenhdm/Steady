@@ -61,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Event View Controller-->
         <scene sceneID="BQe-CG-20q">
             <objects>
-                <viewController id="QlB-ia-91N" sceneMemberID="viewController">
+                <viewController id="QlB-ia-91N" customClass="AddEventViewController" customModule="Steady" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aeW-ab-4VK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,6 +85,7 @@
                                     <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="DoneButton:" destination="QlB-ia-91N" eventType="touchUpInside" id="cdG-En-ebs"/>
                                     <segue destination="jSC-g9-7RK" kind="show" id="zF8-gd-y3I"/>
                                 </connections>
                             </button>
@@ -110,6 +111,12 @@
                         <viewLayoutGuide key="safeArea" id="Ogb-Ji-29B"/>
                     </view>
                     <navigationItem key="navigationItem" id="Rf1-z1-2FG"/>
+                    <connections>
+                        <outlet property="AddEvent" destination="IFZ-8s-KMm" id="WjN-tU-yvD"/>
+                        <outlet property="MindfulSwitch" destination="NdM-5c-FJ7" id="ho8-M2-Xwo"/>
+                        <outlet property="SelectDate" destination="7ZX-7G-ATG" id="8Wd-ME-0hd"/>
+                        <outlet property="SelectType" destination="nWb-4F-GE9" id="f84-9S-uXm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhU-RP-Gve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

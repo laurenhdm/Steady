@@ -10,9 +10,18 @@ import UIKit
 
 class AddEventViewController: UIViewController {
 
+    
+    @IBOutlet weak var AddEvent: UITextField!
+    @IBOutlet weak var SelectType: UIPickerView!
+    @IBOutlet weak var SelectDate: UIDatePicker!
+    @IBOutlet weak var MindfulSwitch: UISwitch!
+    @IBAction func DoneButton(_ sender: UIButton) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
     }
     
