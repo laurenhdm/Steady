@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		899B1B5624BF8968006806CB /* AddNewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B1B5524BF8968006806CB /* AddNewEventViewController.swift */; };
+		899B1B5824BF89CB006806CB /* AddEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B1B5724BF89CB006806CB /* AddEvent.swift */; };
 		89A8DFE224BCD01A008ECF38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A8DFE124BCD01A008ECF38 /* AppDelegate.swift */; };
 		89A8DFE424BCD01A008ECF38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A8DFE324BCD01A008ECF38 /* SceneDelegate.swift */; };
 		89A8DFE624BCD01A008ECF38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A8DFE524BCD01A008ECF38 /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		899B1B5524BF8968006806CB /* AddNewEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewEventViewController.swift; sourceTree = "<group>"; };
+		899B1B5724BF89CB006806CB /* AddEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEvent.swift; sourceTree = "<group>"; };
 		89A8DFDE24BCD01A008ECF38 /* Steady.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steady.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A8DFE124BCD01A008ECF38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89A8DFE324BCD01A008ECF38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				89A8DFE324BCD01A008ECF38 /* SceneDelegate.swift */,
 				89A8DFE524BCD01A008ECF38 /* ViewController.swift */,
 				89A8DFE724BCD01A008ECF38 /* Main.storyboard */,
+				899B1B5524BF8968006806CB /* AddNewEventViewController.swift */,
+				899B1B5724BF89CB006806CB /* AddEvent.swift */,
 				89A8DFEA24BCD01F008ECF38 /* Assets.xcassets */,
 				89A8DFEC24BCD01F008ECF38 /* LaunchScreen.storyboard */,
 				89A8DFEF24BCD01F008ECF38 /* Info.plist */,
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				89A8DFE624BCD01A008ECF38 /* ViewController.swift in Sources */,
+				899B1B5824BF89CB006806CB /* AddEvent.swift in Sources */,
 				89A8DFE224BCD01A008ECF38 /* AppDelegate.swift in Sources */,
+				899B1B5624BF8968006806CB /* AddNewEventViewController.swift in Sources */,
 				89A8DFE424BCD01A008ECF38 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
