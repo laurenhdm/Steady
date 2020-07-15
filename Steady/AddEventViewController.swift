@@ -1,5 +1,5 @@
 //
-//  AddNewEventViewController.swift
+//  AddEventViewController.swift
 //  Steady
 //
 //  Created by Lauren Moran on 7/15/20.
@@ -8,13 +8,7 @@
 
 import UIKit
 
-func createEvent () -> [Event] {
-    let homework = Event()
-    homework.eventName = "English Homework"
-    homework.eventCategory = ""
-}
-
-class AddNewEventViewController: UIViewController {
+class AddEventViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
