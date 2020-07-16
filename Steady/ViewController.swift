@@ -9,7 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBAction func feelingYammy(_ sender: UIButton) {
+    }
+    
+    @IBAction func feelingFocused(_ sender: UIButton) {
+    }
+    
+    @IBAction func feelingHopeless(_ sender: UIButton) {
+    }
+    
+    @IBAction func feelingMindful(_ sender: UIButton) {
+    }
+    
+    @IBAction func feelingZesty(_ sender: UIButton) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
