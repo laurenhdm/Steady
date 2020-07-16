@@ -43,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVK-iC-PDe">
-                                <rect key="frame" x="161" y="676" width="92" height="30"/>
+                                <rect key="frame" x="161" y="631" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="See Your Day">
                                     <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -115,7 +115,7 @@
                         <outlet property="AddEvent" destination="IFZ-8s-KMm" id="WjN-tU-yvD"/>
                         <outlet property="MindfulSwitch" destination="NdM-5c-FJ7" id="ho8-M2-Xwo"/>
                         <outlet property="SelectDate" destination="7ZX-7G-ATG" id="8Wd-ME-0hd"/>
-                        <outlet property="SelectType" destination="nWb-4F-GE9" id="f84-9S-uXm"/>
+                        <outlet property="SelectType" destination="nWb-4F-GE9" id="ihZ-S5-i1G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhU-RP-Gve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -183,7 +183,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zF8-gd-y3I"/>
+        <segue reference="0Hc-ce-KKl"/>
         <segue reference="aTO-YQ-R67"/>
     </inferredMetricsTieBreakers>
     <resources>
