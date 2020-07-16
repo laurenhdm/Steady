@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Steady" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Steady" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZH-Da-GBw">
@@ -32,7 +32,7 @@
                                     </preferredSymbolConfiguration>
                                 </state>
                                 <connections>
-                                    <segue destination="QlB-ia-91N" kind="show" id="aTO-YQ-R67"/>
+                                    <segue destination="jSC-g9-7RK" kind="show" id="kg2-CB-dVK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click The Turtle for Your Day!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOG-02-WGN">
@@ -49,13 +49,14 @@
                                     <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jSC-g9-7RK" kind="show" id="0Hc-ce-KKl"/>
+                                    <segue destination="jSC-g9-7RK" kind="show" id="qOA-2e-fam"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.42720091339999999" green="0.58453583720000002" blue="0.38592892890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="TEz-ss-y19"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,7 +87,6 @@
                                 </state>
                                 <connections>
                                     <action selector="DoneButton:" destination="QlB-ia-91N" eventType="touchUpInside" id="cdG-En-ebs"/>
-                                    <segue destination="jSC-g9-7RK" kind="show" id="zF8-gd-y3I"/>
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NdM-5c-FJ7">
@@ -150,17 +150,61 @@
                         <barButtonItem systemItem="edit" id="FcV-s8-q12"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Your Day" id="MHe-0s-yba">
+                        <barButtonItem key="leftBarButtonItem" title="Back to Home" id="LEb-t2-lgH">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="eHJ-wj-HCC"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="sjE-Bl-577">
                             <connections>
-                                <segue destination="QlB-ia-91N" kind="show" id="jQ9-9h-loX"/>
+                                <segue destination="QlB-ia-91N" kind="show" id="Sau-eR-znl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="EK7-Az-nzB" kind="show" identifier="moveToComplete" id="inj-S9-zEi"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iZ2-pp-KNh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1428.985507246377" y="874.55357142857144"/>
+        </scene>
+        <!--Complete Event View Controller-->
+        <scene sceneID="sng-Uc-2NB">
+            <objects>
+                <viewController id="EK7-Az-nzB" customClass="CompleteEventViewController" customModule="Steady" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O03-S3-Ar7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuq-AM-js1">
+                                <rect key="frame" x="186" y="175" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owo-GV-DOI">
+                                <rect key="frame" x="146" y="289" width="122" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Event Completed!"/>
+                                <connections>
+                                    <action selector="eventCompleted:" destination="EK7-Az-nzB" eventType="touchUpInside" id="IBu-RD-qFc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="mfF-QC-plK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="c26-Bi-JfE"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="iuq-AM-js1" id="jwA-S0-o6f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rhh-y1-aX3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.0000000000001" y="1541.5178571428571"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rxh-Zn-J0N">
@@ -183,8 +227,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0Hc-ce-KKl"/>
-        <segue reference="aTO-YQ-R67"/>
+        <segue reference="qOA-2e-fam"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="turtle-303732_1280" width="1280" height="677"/>

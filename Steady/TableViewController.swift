@@ -9,8 +9,7 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-
-    var text:String = ""
+    
     
     
    func createEvent () -> [Event] {
@@ -45,6 +44,16 @@ class TableViewController: UITableViewController {
 //        // #warning Incomplete implementation, return the number of sections
 //        return 0
 //    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let event = events[indexPath.row]
+
+      // this gives us a single ToDo
+
+      performSegue(withIdentifier: "moveToComplete", sender: event)
+    }
+
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -104,10 +113,20 @@ class TableViewController: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+//    var newEvent: String = ""
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
                 // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if let addVC = segue.destination as? AddEventViewController {
+        addVC.previousVC = self
     }
+        if let completeVC = segue.destination as? CompleteEventViewController {
+          if let event = sender as? Event {
+            completeVC.selectedEvent = event
+            completeVC.previousVC = self
+          }
+        }
 }
-
+}
 

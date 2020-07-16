@@ -8,6 +8,8 @@
 
 import UIKit
 
+// data from addeventviewcontroller (A) needs to be passed into the tableviewcontroller (B); to do that,
+
 class AddEventViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return pickerData.count
@@ -16,13 +18,15 @@ class AddEventViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-    
-    let vc = AddEventViewController()
+    var previousVC = TableViewController()
     
     @IBOutlet weak var AddEvent: UITextField!
     @IBOutlet weak var SelectDate: UIDatePicker!
     @IBOutlet weak var MindfulSwitch: UISwitch!
     @IBAction func DoneButton(_ sender: UIButton) {
+//        let nextVC = TableViewController()
+        
+        
         
         let event = Event()
         let dateFormatter = DateFormatter()
@@ -38,6 +42,9 @@ class AddEventViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             event.eventTime = strDate
             event.eventCategory = pickerData[0]
           }
+        previousVC.events.append(event)
+        previousVC.tableView.reloadData()
+        navigationController?.popViewController(animated: true)
     }
         
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42B04E7124C0F6700013FE0B /* CompleteEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B04E7024C0F6700013FE0B /* CompleteEventViewController.swift */; };
 		899B1B5A24BFA173006806CB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B1B5924BFA173006806CB /* TableViewController.swift */; };
 		899B1B5C24BFA4C2006806CB /* AddEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B1B5B24BFA4C2006806CB /* AddEvent.swift */; };
 		899B1B6024BFAB3D006806CB /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B1B5F24BFAB3D006806CB /* AddEventViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42B04E7024C0F6700013FE0B /* CompleteEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteEventViewController.swift; sourceTree = "<group>"; };
 		899B1B5924BFA173006806CB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		899B1B5B24BFA4C2006806CB /* AddEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEvent.swift; sourceTree = "<group>"; };
 		899B1B5F24BFAB3D006806CB /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		89A8DFE024BCD01A008ECF38 /* Steady */ = {
 			isa = PBXGroup;
 			children = (
+				42B04E7024C0F6700013FE0B /* CompleteEventViewController.swift */,
 				89A8DFE124BCD01A008ECF38 /* AppDelegate.swift */,
 				89A8DFE324BCD01A008ECF38 /* SceneDelegate.swift */,
 				89A8DFE524BCD01A008ECF38 /* ViewController.swift */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B04E7124C0F6700013FE0B /* CompleteEventViewController.swift in Sources */,
 				89A8DFE624BCD01A008ECF38 /* ViewController.swift in Sources */,
 				899B1B6024BFAB3D006806CB /* AddEventViewController.swift in Sources */,
 				899B1B5C24BFA4C2006806CB /* AddEvent.swift in Sources */,
