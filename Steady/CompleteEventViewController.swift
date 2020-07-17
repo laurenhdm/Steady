@@ -11,16 +11,23 @@ import UIKit
 class CompleteEventViewController: UIViewController {
 
     var previousVC = TableViewController()
-    var selectedEvent = Event()
+    var selectedEvent : EventCD?
+
     
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBAction func eventCompleted(_ sender: UIButton) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+          if let theEvent = selectedEvent {
+            context.delete(theEvent)
+            navigationController?.popViewController(animated: true)
+          }
+        }
         
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel.text = selectedEvent.eventName
+        titleLabel.text = selectedEvent?.name
         // Do any additional setup after loading the view.
     }
     

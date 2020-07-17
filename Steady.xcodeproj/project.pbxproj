@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		427F378924C213C70072C6CB /* Steady.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 427F378724C213C70072C6CB /* Steady.xcdatamodeld */; };
 		42B04E7124C0F6700013FE0B /* CompleteEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B04E7024C0F6700013FE0B /* CompleteEventViewController.swift */; };
 		899B1B5A24BFA173006806CB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B1B5924BFA173006806CB /* TableViewController.swift */; };
 		899B1B5C24BFA4C2006806CB /* AddEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899B1B5B24BFA4C2006806CB /* AddEvent.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		427F378824C213C70072C6CB /* Steady.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Steady.xcdatamodel; sourceTree = "<group>"; };
 		42B04E7024C0F6700013FE0B /* CompleteEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteEventViewController.swift; sourceTree = "<group>"; };
 		899B1B5924BFA173006806CB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		899B1B5B24BFA4C2006806CB /* AddEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEvent.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				89A8DFEA24BCD01F008ECF38 /* Assets.xcassets */,
 				89A8DFEC24BCD01F008ECF38 /* LaunchScreen.storyboard */,
 				89A8DFEF24BCD01F008ECF38 /* Info.plist */,
+				427F378724C213C70072C6CB /* Steady.xcdatamodeld */,
 			);
 			path = Steady;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				899B1B6024BFAB3D006806CB /* AddEventViewController.swift in Sources */,
 				899B1B5C24BFA4C2006806CB /* AddEvent.swift in Sources */,
 				899B1B5A24BFA173006806CB /* TableViewController.swift in Sources */,
+				427F378924C213C70072C6CB /* Steady.xcdatamodeld in Sources */,
 				89A8DFE224BCD01A008ECF38 /* AppDelegate.swift in Sources */,
 				89A8DFE424BCD01A008ECF38 /* SceneDelegate.swift in Sources */,
 			);
@@ -600,6 +604,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		427F378724C213C70072C6CB /* Steady.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				427F378824C213C70072C6CB /* Steady.xcdatamodel */,
+			);
+			currentVersion = 427F378824C213C70072C6CB /* Steady.xcdatamodel */;
+			path = Steady.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 89A8DFD624BCD019008ECF38 /* Project object */;
 }

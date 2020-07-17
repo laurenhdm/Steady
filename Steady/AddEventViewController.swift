@@ -24,27 +24,46 @@ class AddEventViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var SelectDate: UIDatePicker!
     @IBOutlet weak var MindfulSwitch: UISwitch!
     @IBAction func DoneButton(_ sender: UIButton) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+
+          // we are creating a new EventCD object here, naming it event
+          let event = EventCD(entity: EventCD.entity(), insertInto: context)
+
+          // if the titleTextField has text, we will call that text titleText
+          if let titleText = AddEvent.text {
+              // we will take the titleText and assign that value to toDo.name
+              // this .name and .important came from the attributes you typed in on the Core Data page!
+              event.name = titleText
+              event.mindful = MindfulSwitch.isOn
+          }
+
+          try? context.save()
+
+          navigationController?.popViewController(animated: true)
+        }
+
+        
 //        let nextVC = TableViewController()
         
         
         
-        let event = Event()
-        let dateFormatter = DateFormatter()
-        dateFormatter.timeStyle = DateFormatter.Style.short
-        dateFormatter.dateStyle = DateFormatter.Style.short
-        let strDate = dateFormatter.string(from:
-            SelectDate.date)
-        //maybe this will work????
-
-          if let eventTitle = AddEvent.text {
-            event.eventName = eventTitle
-            event.eventMindful = MindfulSwitch.isOn
-            event.eventTime = strDate
-            event.eventCategory = pickerData[0]
-          }
-        previousVC.events.append(event)
-        previousVC.tableView.reloadData()
-        navigationController?.popViewController(animated: true)
+//        let event = Event()
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.timeStyle = DateFormatter.Style.short
+//        dateFormatter.dateStyle = DateFormatter.Style.short
+//        let strDate = dateFormatter.string(from:
+//            SelectDate.date)
+//        //maybe this will work????
+//
+//          if let eventTitle = AddEvent.text {
+//            event.eventName = eventTitle
+//            event.eventMindful = MindfulSwitch.isOn
+//            event.eventTime = strDate
+//            event.eventCategory = pickerData[0]
+//          }
+//        previousVC.events.append(event)
+//        previousVC.tableView.reloadData()
+//        navigationController?.popViewController(animated: true)
     }
         
     
