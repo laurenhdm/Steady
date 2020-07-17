@@ -140,7 +140,7 @@ class TableViewController: UITableViewController {
                     addVC.previousVC = self
                 }
                 if let completeVC = segue.destination as? CompleteEventViewController {
-                    if let event = sender as? Event {
+                    if let event = sender as? EventCD {
                         completeVC.selectedEvent = event
                         completeVC.previousVC = self
                     }
